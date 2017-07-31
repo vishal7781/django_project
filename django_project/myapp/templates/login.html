@@ -1,0 +1,39 @@
+{%load static %}
+
+<!Doctype html>
+<html>
+	<head>
+		<title>login</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap -->
+		<link href="{%static "css/bootstrap.css" %}" rel="stylesheet">
+	</head>
+	<body  style= "background-color:#E0F7FA;">
+		<center>	<div class="row">
+				<div class="col-sm-4 col-sm-offset-4">
+			<h1 style="background:teal;">upload to win </h1>
+			<h3>Login </h3>
+			<form method = "post">
+				{% csrf_token %}
+					<div>
+						<label for="username">Username: </label>
+						<input id="username" type="text" name="username" value="{{username}}">
+					</div>
+					<div>
+						<label for = "password">Password: </label>
+						<input id ="password" type="password" name="password" value="{{password}}">
+					</div>
+					<input type="submit" value="Login" class="btn btn-success">
+			</form>
+		</div>
+		</div>
+		</center>
+		<!--javascript files-->
+
+		<script src="{% static "js/jquery-3.2.1.js" %}"></script>
+                <script src="{% static "js/bootstrap.js" %}"></script>
+	</body>
+</html>

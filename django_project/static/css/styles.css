@@ -1,0 +1,30 @@
+#id1
+{
+	width:100px;
+	height:40px;
+
+}
+
+#id2
+{
+	background-color:#E0E0E0;
+}
+
+p
+{
+	background-color:#26A69A;
+	color:#64FFDA;
+}
+
+.cls
+{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.icons
+{
+	font-size=100px;
+	color:#FFA000;
+}
+

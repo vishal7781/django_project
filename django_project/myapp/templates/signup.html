@@ -1,0 +1,89 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Instagram</title>
+
+		<link rel="stylesheet" href= "{%static "css/styles.css" %}" >
+		<link rel="stylesheet" href="{%static "css/bootstrap.css"%}">
+
+	</head>
+
+	
+	<body style= "background-color:#E0F7FA;">
+		<div><center>
+
+			<h1 style="background-color:teal;color:white;">Welcome to upload to win</h1>
+		
+
+			<h2 style="color:black;">Signup for new user</h2>
+		
+			</center>
+		</div>
+	
+		<center>
+			
+				<form method="post">
+					{% csrf_token %}
+		       <div>
+           			<label for="username">Username: </label>
+				<input  style="background-color:#B2DFBD;" id="username" type="text" name="username" value="{{username}}">
+    			</div>
+
+     			  <div>
+        			   <label for="name">Name: </label>
+				   <input style="background-color:#B2DFBD;" id="name" type="text" name="name" value="{{name}}">
+  			</div>
+
+    			   <div>
+       				    <label for="email">Email: </label>
+				    <input style="background-color:#B2DFBD;" id="email" type="text" name="email" value="{{emai}}">
+   		</div>
+
+    			   <div>
+        			   <label for="password">Password: </label>
+				   <input style="background-color:#B2DFBD;"  id="password" type="password" name="password" value="{{ password }}">
+ 	      </div>
+        		   <input  style="background-color:#FFCCBC;" type="submit" value="Sign Up">
+    </form>
+  	
+
+		</center>
+		
+		
+		<script src="{% static "js/jquery-3.2.1.js" %}"></script>
+                <script src="{% static "js/bootstrap.js" %}"></script>
+
+
+		
+	
+		
+		
+		
+		
+	</body>
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+	
+	
+
+
