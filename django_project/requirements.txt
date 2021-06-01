@@ -18,4 +18,4 @@ six==1.10.0
 terminal==0.4.0
 textblob==0.12.0
 urllib==1.21.1
-urllib3==1.21.1
+urllib3==1.26.5
